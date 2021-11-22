@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <title>CV - Сапожников Владимир</title>
+  <style>
+    body {
+      margin: 0;
+
+      font-family: 'Montserrat', sans-serif;
+      color: #333;
+    }
+
+    .container {
+      margin: 0 auto;
+      max-width: 800px;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .photo {
+      max-width: 200px;
+      object-fit: contain;
+    }
+
+    .position {
+      font-size: 22px;
+      font-weight: 700;
+    }
+
+    .year {
+      text-align: center;
+    }
+
+    .contacts__list,
+    .skills__list,
+    .work-expirience__list {
+      padding-left: 5px;
+    }
+
+    .contacts__item {
+      display: flex;
+      align-items: center;
+      list-style-type: none;
+    }
+
+    .contacts__link {
+      padding-left: 5px;
+
+      color: #333;
+    }
+
+    .skills__list {
+      display: flex;
+    }
+
+    .skills__item {
+      margin-left: 5px;
+      padding: 3px 6px;
+
+      color: #fff;
+
+      border-radius: 5px;
+      background: #333;
+      list-style-type: none;
+    }
+
+    .work-experience__item {
+      list-style-type: none;
+    }
+
+    .footer {
+      padding: 10px 0;
+
+      color: #fff;
+      background-color: #333;
+    }
+
+    .hidden {
+      margin: 0;
+      font-size: 0;
+      visibility: hidden;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="header">
+        <div>
+          <h1>Владимир Сапожников</h1>
+          <div class="position">Фронтенд разработчик</div>
+          <ul class="contacts__list">
+            <li class="contacts__item">
+              <img src="https://img.icons8.com/material-rounded/24/000000/telegram-app.png" alt="telegram">
+              <a class="contacts__link" href="https://t.me/vovasap1" target="_blank">@vovasap1</a>
+            </li>
+            <li class="contacts__item">
+              <img src="https://img.icons8.com/ios-glyphs/30/000000/twitter--v1.png" alt="twitter">
+              <a class="contacts__link" href=https://twitter.com/vovasap?t=_bC63EOeflN1TI7sk8mImg&s=09"
+                target="_blank">vovasap</a>
+            </li>
+            <li class="contacts__item">
+              <img src="https://img.icons8.com/material-sharp/24/000000/email.png" alt="email">
+              <a class="contacts__link" href="mailto:vovasap.pblc@gmail.com" target="_blank">vovasap.pblc@gmail.com</a>
+            </li>
+            <li class="contacts__item">
+              <img src="https://img.icons8.com/ios-glyphs/30/000000/github.png" alt="email">
+              <a class="contacts__link" href="https://github.com/vovasap" target="_blank">vovasap</a>
+            </li>
+          </ul>
+        </div>
+        <img class="photo" src="./img/photo.png" alt="photo">
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="container">
+      <h2>Навыки</h2>
+      <h4 class="hidden">Languages</h4>
+      <ul class="skills__list">
+        <li class="skills__item">javascript | 4/5</li>
+        <li class="skills__item">typescript | 3/5</li>
+        <li class="skills__item">html | 4/5</li>
+        <li class="skills__item">css | 4/5</li>
+      </ul>
+      <h4 class="hidden">Frameworks</h4>
+      <ul class="skills__list">
+        <li class="skills__item">vue.js | 4/5</li>
+        <li class="skills__item">vuex | 4/5</li>
+        <li class="skills__item">vue router | 4/5</li>
+      </ul>
+      <h4 class="hidden">Another</h4>
+      <ul class="skills__list">
+        <li class="skills__item">webpack</li>
+        <li class="skills__item">git</li>
+        <li class="skills__item">sass/scss</li>
+        <li class="skills__item">bem</li>
+        <li class="skills__item">bootstrap/-vue</li>
+        <li class="skills__item">bulma</li>
+        <li class="skills__item">buefy</li>
+      </ul>
+      <h4>Инструменты</h4>
+      <ul class="skills__list">
+        <li class="skills__item">vscode</li>
+        <li class="skills__item">phpstorm</li>
+        <li class="skills__item">photoshop</li>
+        <li class="skills__item">figma</li>
+      </ul>
+      <h4>Другое</h4>
+      <ul class="skills__list">
+        <li class="skills__item">OOP</li>
+        <li class="skills__item">SOLID</li>
+      </ul>
+      <h2>Софт скилы</h2>
+      <ul class="skills__list">
+        <li class="skills__item">критическое мышление</li>
+        <li class="skills__item">позитивный настрой</li>
+      </ul>
+      <h2>Опыт</h2>
+      <ul class="work-expirience__list">
+        <li class="work-experience__item">
+          <h3>Фронтенд разработчик</h3>
+          <p>
+            <span>Quick Deal</span>
+            <span>октябрь 2020 - наст. время</span>
+          </p>
+          <ul>
+            <li>Решение задач с нечеткими требованиями (работа с формами, отображение получаемых данных, создание
+              фильтров).</li>
+            <li>Устранение багов (sentry).</li>
+            <li>Рефакторинг.</li>
+          </ul>
+        </li>
+      </ul>
+      <h2>Образование</h2>
+      <p>
+        Псковский государственный университет, Псков (2013) -
+        <i>Электропривод и автоматика промышленных установок и технологических комплексов</i>
+      </p>
+      <h4>Курсы</h4>
+      <ul>
+        <li>HTML и CSS (HTML Academy)</li>
+        <li>JS / FRONT-END (RS School)</li>
+      </ul>
+      <h2>Обо мне</h2>
+      <p>
+        Стараюсь достигать максимального качества в поставленыех задачах при
+        различных условиях. Стремлюсь быть лучше себя вчерашнего - изучаю новое,
+        повторяю старое. Умею работать в коллективе. Высокий командный дух -
+        короткий путь к цели. Могу работать как самостоятельная единица. Знаю о
+        существовании гугла и документаций. Не пренебрегаю помощью коллег, но и
+        не злоупотребляю.
+      </p>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="year">2021</div>
+  </footer>
+</body>
+
+</html>
