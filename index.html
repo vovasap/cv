@@ -19,10 +19,11 @@
 
     .container {
       margin: 0 auto;
+      padding: 0 10px;
       max-width: 800px;
     }
 
-    .header {
+    .header__main-info {
       display: flex;
       justify-content: space-between;
     }
@@ -44,6 +45,7 @@
     .contacts__list,
     .skills__list,
     .work-expirience__list {
+      margin: 8px 0;
       padding-left: 5px;
     }
 
@@ -61,10 +63,12 @@
 
     .skills__list {
       display: flex;
+      flex-wrap: wrap;
     }
 
     .skills__item {
       margin-left: 5px;
+      margin-bottom: 10px;
       padding: 3px 6px;
 
       color: #fff;
@@ -90,6 +94,20 @@
       font-size: 0;
       visibility: hidden;
     }
+
+    @media (max-width: 576px) {
+      .name {
+        font-size: 28px;
+      }
+
+      .photo {
+        width: 150px;
+      }
+
+      .contacts__list {
+        font-size: 14px;
+      }
+    }
   </style>
 </head>
 
@@ -98,29 +116,33 @@
     <div class="container">
       <div class="header">
         <div>
-          <h1>Владимир Сапожников</h1>
+          <h1 class="name">Владимир Сапожников</h1>
           <div class="position">Фронтенд разработчик</div>
-          <ul class="contacts__list">
-            <li class="contacts__item">
-              <img src="https://img.icons8.com/material-rounded/24/000000/telegram-app.png" alt="telegram">
-              <a class="contacts__link" href="https://t.me/vovasap1" target="_blank">@vovasap1</a>
-            </li>
-            <li class="contacts__item">
-              <img src="https://img.icons8.com/ios-glyphs/30/000000/twitter--v1.png" alt="twitter">
-              <a class="contacts__link" href=https://twitter.com/vovasap?t=_bC63EOeflN1TI7sk8mImg&s=09"
-                target="_blank">vovasap</a>
-            </li>
-            <li class="contacts__item">
-              <img src="https://img.icons8.com/material-sharp/24/000000/email.png" alt="email">
-              <a class="contacts__link" href="mailto:vovasap.pblc@gmail.com" target="_blank">vovasap.pblc@gmail.com</a>
-            </li>
-            <li class="contacts__item">
-              <img src="https://img.icons8.com/ios-glyphs/30/000000/github.png" alt="email">
-              <a class="contacts__link" href="https://github.com/vovasap" target="_blank">vovasap</a>
-            </li>
-          </ul>
+          <div class="header__main-info">
+            <ul class="contacts__list">
+              <li class="contacts__item">
+                <img src="https://img.icons8.com/material-rounded/24/000000/telegram-app.png" alt="telegram">
+                <a class="contacts__link" href="https://t.me/vovasap1" target="_blank">@vovasap1</a>
+              </li>
+              <li class="contacts__item">
+                <img src="https://img.icons8.com/ios-glyphs/30/000000/twitter--v1.png" alt="twitter">
+                <a class="contacts__link" href=https://twitter.com/vovasap?t=_bC63EOeflN1TI7sk8mImg&s=09"
+                  target="_blank">vovasap</a>
+              </li>
+              <li class="contacts__item">
+                <img src="https://img.icons8.com/material-sharp/24/000000/email.png" alt="email">
+                <a class="contacts__link" href="mailto:vovasap.pblc@gmail.com"
+                  target="_blank">vovasap.pblc@gmail.com</a>
+              </li>
+              <li class="contacts__item">
+                <img src="https://img.icons8.com/ios-glyphs/30/000000/github.png" alt="email">
+                <a class="contacts__link" href="https://github.com/vovasap" target="_blank">vovasap</a>
+              </li>
+            </ul>
+
+            <img class="photo" src="./img/photo.png" alt="photo">
+          </div>
         </div>
-        <img class="photo" src="./img/photo.png" alt="photo">
       </div>
     </div>
   </header>
