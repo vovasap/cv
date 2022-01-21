@@ -227,8 +227,10 @@
     </div>
   </main>
   <footer class="footer">
-    <div class="year">2021</div>
+    <div class="year"></div>
   </footer>
 </body>
-
+<script>
+  document.querySelector('.year').textContent = new Date().getFullYear()
+</script>
 </html>
